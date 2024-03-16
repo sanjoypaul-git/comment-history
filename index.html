@@ -4,261 +4,253 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/7178ddedfb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Comment History App</title>
   </head>
-  <body class="bg-gray-1 w-full">
+  <body class="bg-light-1 w-full">
     <div id="app">
       <div class="max-w-[760px] mx-auto px-2.5 py-12">
         <div class="flex flex-col gap-5">
           <!-- 1st element -->
-          <div class="bg-white px-4 py-4 sm:py-6 md:p-6 rounded-xl drop-shadow-sm">
-            <div class="flex justify-between gap-6">
+          <div class="bg-white p-4 sm:p-6 rounded-xl drop-shadow-sm">
+            <div class="xs:flex justify-between gap-4 xs:gap-5 sm:gap-6">
               <div class="hidden xs:block max-w-9 w-full">
-                <div class="flex flex-col items-center bg-gray-1 rounded-[10px] py-0.5 px-2.5 gap-2">
-                  <span class="flex items-center justify-center bg-transparent font-medium text-xl text-gray-2 cursor-pointer">+</span>
-                  <span class="font-medium text-primary">12</span>
-                  <span class="flex items-center justify-center bg-transparent font-medium text-xl text-gray-2 cursor-pointer">-</span>
+                <div class="flex flex-col items-center bg-light-1 rounded-[10px] py-0.5 px-2.5 gap-2">
+                  <span class="flex items-center justify-center bg-transparent font-medium text-xl text-light-3 cursor-pointer">+</span>
+                  <span class="font-medium text-sm sm:text-base text-primary">12</span>
+                  <span class="flex items-center justify-center bg-transparent font-medium text-xl text-light-3 cursor-pointer">-</span>
                 </div>
               </div>
               <div class="grow">
-                <div class="flex justify-between mb-3">
-                  <div class="flex items-center gap-[18px]">
+                <div class="flex justify-between smd:items-center mb-3">
+                  <div class="flex items-center gap-3.5 xs:gap-[18px]">
                     <div class="w-8 h-8">
                       <img 
                         src="./assets/images/amyrobson.jpg"
                         alt="amyrobson image"
-                        class="w-full h-full rounded-full overflow-hidden object-cover border border-gray-2"
+                        class="w-full h-full rounded-full overflow-hidden object-cover border border-light-3"
                       />
                     </div>
-                    <div class="sm:flex items-center gap-4">
-                      <p class="text-gray-700/90 text-[15.8px] font-medium">amyrobson</p>
-                      <p class="text-gray-6 text-[13px] sm:text-[15.8px]">1 month ago</p>
+                    <div class="smd:flex items-center gap-4">
+                      <p class="text-gray-700/90 text-sm xs:text-[15px] sm:text-[15.8px] font-medium">amyrobson</p>
+                      <p class="text-dark text-[13px] smd:text-[15.8px]">1 month ago</p>
                     </div>
                   </div>
-                  <div class="flex mt-[5px] sm:mt-0 sm:items-center cursor-pointer gap-1 text-primary">
-                    <div class="w-4 h-4">
-                      <img
-                        src="./assets/images/reply-solid.svg"
-                        alt="reply icon"
-                        class="w-full h-full object-cover text-primary"
-                      />
+                  <div>
+                    <div class="flex items-center cursor-pointer gap-2 text-primary">
+                      <div class="w-[13px] h-[13px] xs:w-3.5 xs:h-3.5 smd:w-[15.8px] smd:h-[15.8px]">
+                        <img
+                          src="./assets/images/reply.svg"
+                          alt="reply icon"
+                          class="w-full h-full object-cover text-primary"
+                        />
+                      </div>
+                      <span class="text-[13px] xs:text-sm smd:text-[15.8px] capitalize font-medium sr-only sm:not-sr-only">reply</span>
                     </div>
-                    <!-- <span class="text-lg"><i class="fa-solid fa-reply"></i></span> -->
-                    <span class="text-sm sm:text-base capitalize font-medium">reply</span>
-                  </div>
+                  </div>                  
                 </div>
-                <p class="text-gray-6 text-[15px] smd:text-base max-w-[600px] w-full">Impressive! Though it seems the drag feature could be improved. But overall it
+                <p class="text-dark text-sm sm:text-[15px] smd:text-base max-w-[600px] w-full">Impressive! Though it seems the drag feature could be improved. But overall it
                   looks incredible.You've nailed the design and the responsiveness at various
                   breakpoints works really well.</p>
+              </div>
+              <div class="xs:hidden max-w-24 w-full mt-3 xs:mt-0">
+                <div class="flex items-center bg-light-1 rounded-[10px] py-0.5 px-2.5 gap-2">
+                  <span class="flex items-center justify-center bg-transparent font-medium text-xl text-light-3 cursor-pointer">+</span>
+                  <span class="grow text-center text-sm font-medium text-primary">12</span>
+                  <span class="flex items-center justify-center bg-transparent font-medium text-xl text-light-3 cursor-pointer">-</span>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="flex flex-col gap-5">
             <!-- 2nd element -->
-            <div class="bg-white p-6 rounded-xl drop-shadow-sm">
-              <div class="flex justify-between gap-6">
-                <div class="max-w-9 w-full">
-                  <div class="flex flex-col items-center bg-gray-1 rounded-[10px] py-0.5 px-2.5 gap-2">
-                    <span class="flex items-center justify-center bg-transparent font-medium text-xl text-gray-2 cursor-pointer">+</span>
-                    <span class="font-medium text-primary">5</span>
-                    <span class="flex items-center justify-center bg-transparent font-medium text-xl text-gray-2 cursor-pointer">-</span>
+            <div class="bg-white p-4 sm:p-6 rounded-xl drop-shadow-sm">
+              <div class="xs:flex justify-between gap-4 xs:gap-5 sm:gap-6">
+                <div class="hidden xs:block max-w-9 w-full">
+                  <div class="flex flex-col items-center bg-light-1 rounded-[10px] py-0.5 px-2.5 gap-2">
+                    <span class="flex items-center justify-center bg-transparent font-medium text-xl text-light-3 cursor-pointer">+</span>
+                    <span class="font-medium text-sm sm:text-base text-primary">5</span>
+                    <span class="flex items-center justify-center bg-transparent font-medium text-xl text-light-3 cursor-pointer">-</span>
                   </div>
                 </div>
                 <div class="grow">
-                  <div class="flex justify-between mb-3">
-                    <div class="flex gap-[18px]">
+                  <div class="flex justify-between smd:items-center mb-3">
+                    <div class="flex items-center gap-3.5 xs:gap-[18px]">
                       <div class="w-8 h-8">
                         <img 
                           src="./assets/images/maxblagun.jpg"
                           alt="maxblagun image"
-                          class="w-full h-full rounded-full overflow-hidden object-cover border border-gray-2"
+                          class="w-full h-full rounded-full overflow-hidden object-cover border border-light-3"
                         />
                       </div>
-                      <div class="flex items-center gap-4">
-                        <span class="text-gray-700/90 text-[15.8px] font-medium">maxblagun</span>
-                        <span class="text-gray-6 text-[15.8px]">2 weeks ago</span>
+                      <div class="smd:flex items-center gap-4">
+                        <p class="text-gray-700/90 text-sm xs:text-[15px] sm:text-[15.8px] font-medium">maxblagun</p>
+                        <p class="text-dark text-[13px] smd:text-[15.8px]">2 weeks ago</p>
                       </div>
                     </div>
-                    <div class="flex items-center cursor-pointer gap-1 text-primary">
-                      <div class="w-4 h-4">
-                        <img
-                          src="./assets/images/reply-solid.svg"
-                          alt="reply icon"
-                          class="w-full h-full object-cover text-primary"
-                        />
+                    <div>
+                      <div class="flex items-center cursor-pointer gap-2 text-primary">
+                        <div class="w-[13px] h-[13px] xs:w-3.5 xs:h-3.5 smd:w-[15.8px] smd:h-[15.8px]">
+                          <img
+                            src="./assets/images/reply.svg"
+                            alt="reply icon"
+                            class="w-full h-full object-cover text-primary"
+                          />
+                        </div>
+                        <span class="text-[13px] xs:text-sm smd:text-[15.8px] capitalize font-medium sr-only sm:not-sr-only">reply</span>
                       </div>
-                      <span class=" capitalize font-medium">reply</span>
-                    </div>
+                    </div>                  
                   </div>
-                  <p class="text-gray-6 max-w-[600px]">Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!</p>
+                  <p class="text-dark text-sm sm:text-[15px] smd:text-base max-w-[600px] w-full">Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!</p>
+                </div>
+                <div class="xs:hidden max-w-24 w-full mt-3 xs:mt-0">
+                  <div class="flex items-center bg-light-1 rounded-[10px] py-0.5 px-2.5 gap-2">
+                    <span class="flex items-center justify-center bg-transparent font-medium text-xl text-light-3 cursor-pointer">+</span>
+                    <span class="grow text-center text-sm font-medium text-primary">5</span>
+                    <span class="flex items-center justify-center bg-transparent font-medium text-xl text-light-3 cursor-pointer">-</span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="flex gap-10 ml-[42px]">
+            
+            <div class="flex gap-4 xs:gap-5 smd:gap-10 ml-4 xs:ml-6 smd:ml-[42px]">
               <!-- vertical line -->
-              <div class="border-l-2 border-l-gray-7"></div>
+              <div class="border-l-2 border-l-light-2"></div>
               <div class="flex flex-col gap-5">
                 <!-- nested elements -->
-                <div class="bg-white p-6 rounded-xl drop-shadow-sm">
-                  <div class="flex justify-between gap-6">
-                    <div class="max-w-9 w-full">
-                      <div class="flex flex-col items-center bg-gray-1 rounded-[10px] py-0.5 px-2.5 gap-2">
-                        <span class="flex items-center justify-center bg-transparent font-medium text-xl text-gray-2 cursor-pointer">+</span>
-                        <span class="font-medium text-primary">4</span>
-                        <span class="flex items-center justify-center bg-transparent font-medium text-xl text-gray-2 cursor-pointer">-</span>
+                <div class="bg-white p-4 sm:p-6 rounded-xl drop-shadow-sm">
+                  <div class="xs:flex justify-between gap-4 xs:gap-5 sm:gap-6">
+                    <div class="hidden xs:block max-w-9 w-full">
+                      <div class="flex flex-col items-center bg-light-1 rounded-[10px] py-0.5 px-2.5 gap-2">
+                        <span class="flex items-center justify-center bg-transparent font-medium text-xl text-light-3 cursor-pointer">+</span>
+                        <span class="font-medium text-sm sm:text-base text-primary">4</span>
+                        <span class="flex items-center justify-center bg-transparent font-medium text-xl text-light-3 cursor-pointer">-</span>
                       </div>
                     </div>
                     <div class="grow">
-                      <div class="flex justify-between mb-3">
-                        <div class="flex gap-[18px]">
+                      <div class="flex justify-between smd:items-center mb-3">
+                        <div class="flex items-center gap-3.5 xs:gap-[18px]">
                           <div class="w-8 h-8">
                             <img 
                               src="./assets/images/ramsesmiron.jpg"
                               alt="ramsesmiron image"
-                              class="w-full h-full rounded-full overflow-hidden object-cover border border-gray-2"
+                              class="w-full h-full rounded-full overflow-hidden object-cover border border-light-3"
                             />
                           </div>
-                          <div class="flex items-center gap-4">
-                            <span class="text-gray-700/90 text-[15.8px] font-medium">ramsesmiron</span>
-                            <span class="text-gray-6 text-[15.8px]">1 week ago</span>
+                          <div class="smd:flex items-center gap-4">
+                            <p class="text-gray-700/90 text-sm xs:text-[15px] sm:text-[15.8px] font-medium">ramsesmiron</p>
+                            <p class="text-dark text-[13px] smd:text-[15.8px]">1 week ago</p>
                           </div>
                         </div>
-                        <div class="flex items-center cursor-pointer gap-1 text-primary">
-                          <div class="w-4 h-4">
-                            <img
-                              src="./assets/images/reply-solid.svg"
-                              alt="reply icon"
-                              class="w-full h-full object-cover text-primary"
-                            />
+                        <div>
+                          <div class="flex items-center cursor-pointer gap-2 text-primary">
+                            <div class="w-[13px] h-[13px] xs:w-3.5 xs:h-3.5 smd:w-[15.8px] smd:h-[15.8px]">
+                              <img
+                                src="./assets/images/reply.svg"
+                                alt="reply icon"
+                                class="w-full h-full object-cover text-primary"
+                              />
+                            </div>
+                            <span class="text-[13px] xs:text-sm smd:text-[15.8px] capitalize font-medium sr-only sm:not-sr-only">reply</span>
                           </div>
-                          <!-- <span class="text-lg"><i class="fa-solid fa-reply"></i></span> -->
-                          <span class=" capitalize font-medium">reply</span>
-                        </div>
+                        </div>                  
                       </div>
-                      <p class="text-gray-6 max-w-[600px]">
-                        <span class="text-primary font-medium">@maxblagun</span> If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
+                      <p class="text-dark text-sm sm:text-[15px] smd:text-base max-w-[600px] w-full">
+                        <span class="text-primary font-medium">@maxblagun</span> If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.  
                       </p>
+                    </div>
+                    <div class="xs:hidden max-w-24 w-full mt-3 xs:mt-0">
+                      <div class="flex items-center bg-light-1 rounded-[10px] py-0.5 px-2.5 gap-2">
+                        <span class="flex items-center justify-center bg-transparent font-medium text-xl text-light-3 cursor-pointer">+</span>
+                        <span class="grow text-center text-sm font-medium text-primary">4</span>
+                        <span class="flex items-center justify-center bg-transparent font-medium text-xl text-light-3 cursor-pointer">-</span>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="bg-white p-6 rounded-xl drop-shadow-sm">
-                  <div class="flex justify-between gap-6">
-                    <div class="max-w-9 w-full">
-                      <div class="flex flex-col items-center bg-gray-1 rounded-[10px] py-0.5 px-2.5 gap-2">
-                        <span class="flex items-center justify-center bg-transparent font-medium text-xl text-gray-2 cursor-pointer">+</span>
-                        <span class="font-medium text-primary">2</span>
-                        <span class="flex items-center justify-center bg-transparent font-medium text-xl text-gray-2 cursor-pointer">-</span>
+                <div class="bg-white p-4 sm:p-6 rounded-xl drop-shadow-sm">
+                  <div class="xs:flex justify-between gap-4 xs:gap-5 sm:gap-6">
+                    <div class="hidden xs:block max-w-9 w-full">
+                      <div class="flex flex-col items-center bg-light-1 rounded-[10px] py-0.5 px-2.5 gap-2">
+                        <span class="flex items-center justify-center bg-transparent font-medium text-xl text-light-3 cursor-pointer">+</span>
+                        <span class="font-medium text-sm sm:text-base text-primary">2</span>
+                        <span class="flex items-center justify-center bg-transparent font-medium text-xl text-light-3 cursor-pointer">-</span>
                       </div>
                     </div>
                     <div class="grow">
-                      <div class="flex justify-between mb-3">
-                        <div class="flex gap-[18px]">
+                      <div class="flex justify-between smd:items-center mb-3">
+                        <div class="flex items-center gap-3.5 xs:gap-[18px]">
                           <div class="w-8 h-8">
                             <img 
                               src="./assets/images/juliusomo.jpg"
                               alt="juliusomo image"
-                              class="w-full h-full rounded-full overflow-hidden object-cover border border-gray-2"
+                              class="w-full h-full rounded-full overflow-hidden object-cover border border-light-3"
                             />
                           </div>
-                          <div class="flex items-center gap-4">
-                            <div class="flex gap-3">
-                              <span class="text-gray-700/90 text-[15.8px] font-medium">juliusomo</span>
+                          <div class="smd:flex items-center gap-4">
+                            <div class="flex items-center gap-3">
+                              <p class="text-gray-700/90 text-sm xs:text-[15px] sm:text-[15.8px] font-medium">juliusomo</p>
                               <div>
                                 <span class="bg-primary inline-block text-white lowercase px-[5px] text-[13px] font-medium rounded-sm">
                                   you
                                 </span>
                               </div>
                             </div>
-                            <span class="text-gray-6 text-[15.8px]">2 days ago</span>
+                            <p class="text-dark text-[13px] smd:text-[15.8px]">2 days ago</p>
                           </div>
                         </div>
-                        <div class="flex">
-                          <div class="flex items-center cursor-pointer gap-1 text-rose-500">
-                            <span class="text-lg">
-                              <i class="fa-solid fa-trash"></i>
-                            </span>
-                            <span class="capitalize text-[16px] font-medium">delete</span>
+                        <div>
+                          <div class="flex items-center mt-1 cursor-pointer gap-4 text-primary">
+                            <div class="flex items-center cursor-pointer gap-2 text-danger">
+                              <div class="w-[13px] h-[13px] xs:w-3.5 xs:h-3.5 smd:w-[15.8px] smd:h-[15.8px]">
+                                <img
+                                  src="./assets/images/trash.svg"
+                                  alt="trash icon"
+                                  class="w-full h-full object-cover text-primary"
+                                />
+                              </div>
+                              <span class="text-[13px] xs:text-sm smd:text-[15.8px] capitalize font-medium sr-only sm:not-sr-only mt-1">delete</span>
+                            </div>
+                            <div class="flex items-center cursor-pointer gap-2 text-primary">
+                              <div class="w-[13px] h-[13px] xs:w-3.5 xs:h-3.5 smd:w-[15.8px] smd:h-[15.8px]">
+                                <img
+                                  src="./assets/images/pen.svg"
+                                  alt="pen icon"
+                                  class="w-full h-full object-cover text-primary"
+                                />
+                              </div>
+                              <span class="text-[13px] xs:text-sm smd:text-[15.8px] capitalize font-medium sr-only sm:not-sr-only">edit</span>
+                            </div>
                           </div>
-                          <div class="flex items-center cursor-pointer gap-1 text-primary">
-                            <span class="text-lg">
-                              <i class="fa-solid fa-pen"></i>
-                            </span>
-                            <span class="capitalize text-[16px] font-medium">edit</span>
-                          </div>
-                        </div>
+                        </div>                  
                       </div>
-                      <p class="text-gray-6 max-w-[520px]">
+                      <p class="text-dark text-sm sm:text-[15px] smd:text-base max-w-[600px] w-full">
                         <span class="text-primary font-medium">@ramsesmiron</span> I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/ framework. But the fundamentals are what stay constant.
                       </p>
                     </div>
+                    <div class="xs:hidden max-w-24 w-full mt-3 xs:mt-0">
+                      <div class="flex items-center bg-light-1 rounded-[10px] py-0.5 px-2.5 gap-2">
+                        <span class="flex items-center justify-center bg-transparent font-medium text-xl text-light-3 cursor-pointer">+</span>
+                        <span class="grow text-center text-sm font-medium text-primary">4</span>
+                        <span class="flex items-center justify-center bg-transparent font-medium text-xl text-light-3 cursor-pointer">-</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
-                <!-- <div class="bg-white p-6 rounded-xl drop-shadow-sm">
-                  <div class="flex justify-between gap-6">
-                    <div class="max-w-9 w-full">
-                      <div class="flex flex-col items-center bg-gray-1 rounded-[10px] py-0.5 px-2.5 gap-2">
-                        <span class="flex items-center justify-center bg-transparent font-bold text-xl text-gray-2 cursor-pointer">+</span>
-                        <span class="font-bold text-primary">2</span>
-                        <span class="flex items-center justify-center bg-transparent font-bold text-xl text-gray-2 cursor-pointer">-</span>
-                      </div>
-                    </div>
-                    <div class="grow">
-                      <div class="flex justify-between mb-3">
-                        <div class="flex gap-[18px]">
-                          <div class="w-8 h-8">
-                            <img 
-                              src="./assets/images/juliusomo.jpg"
-                              alt="juliusomo image"
-                              class="w-full h-full rounded-full overflow-hidden object-cover border border-gray-2"
-                            />
-                          </div>
-                          <div class="flex items-center gap-4">
-                            <div class="flex gap-3">
-                              <span class="text-gray-3 text-[16.2px] font-bold">juliusomo</span>
-                              <div>
-                                <span class="bg-primary inline-block text-white lowercase px-[5px] text-[13px] font-bold rounded-sm">you</span>
-                              </div>
-                            </div>
-                            <span class="text-gray-6 text-[16px] font-medium">2 days ago</span>
-                          </div>
-                        </div>
-                        <div class="flex">
-                          <div class="flex items-center cursor-pointer gap-1 text-red-500">
-                            <span class="text-lg">
-                              <i class="fa-solid fa-trash"></i>
-                            </span>
-                            <span class=" capitalize text-[16px] font-bold">delete</span>
-                          </div>
-                          <div class="flex items-center cursor-pointer gap-1 text-primary">
-                            <span class="text-lg">
-                              <i class="fa-solid fa-pen"></i>
-                            </span>
-                            <span class=" capitalize text-[16px] font-bold">edit</span>
-                          </div>
-                        </div>
-                      </div>
-                      <p class="font-medium text-gray-6 max-w-[520px]">
-                        <span class="text-primary font-bold">@ramsesmiron</span> I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/ framework.But the fundamentals are what stay constant.</p>
-                    </div>
-                  </div>
-                </div> -->
               </div>
             </div>            
           </div>
         </div>
         <div class="mt-5">
-          <div class="bg-white p-6 rounded-xl drop-shadow-sm">
+          <div class="bg-white p-4 sm:p-6 rounded-xl drop-shadow-sm">
             <div class="flex gap-4">
-              <div class="w-10 h-10">
+              <div class="hidden sm:block w-10 h-10">
                 <img
                   src="./assets/images/juliusomo.jpg"
                   alt="juliusomo image"
-                  class="w-full h-full object-cover rounded-full overflow-hidden border border-gray-2"
+                  class="w-full h-full object-cover rounded-full overflow-hidden border border-light-3"
                 />
               </div>
               <div class="flex-grow">
@@ -270,10 +262,10 @@
                     <label for="comment" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">
                       comment
                     </label>                    
-                    <textarea id="comment" rows="3" class="block py-2.5 px-4 w-full resize-none text-gray-500 rounded-lg border border-gray-7 focus:ring-primary focus:border-primary focus:outline-primary placeholder:text-base placeholder:text-gray-6" placeholder="Add a comment..."></textarea>
+                    <textarea id="comment" rows="3" class="block py-2.5 px-4 w-full resize-none text-gray-500 rounded-lg border border-light-2 focus:ring-primary focus:border-primary focus:outline-primary placeholder:text-base placeholder:text-dark" placeholder="Add a comment..."></textarea>
                   </div>
                   <div>
-                    <button type="submit" class="uppercase font-medium rounded-lg bg-primary text-white py-2.5 px-7">
+                    <button type="submit" class="uppercase font-medium rounded-lg bg-primary text-white text-sm smd:text-base py-2 px-3.5 smd:py-2.5 smd:px-7">
                       send
                     </button>
                   </div>
